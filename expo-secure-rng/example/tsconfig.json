@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-secure-rng": ["../src/index"],
+      "expo-secure-rng/*": ["../src/*"]
+    }
+  }
+}

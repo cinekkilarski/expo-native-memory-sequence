@@ -78,7 +78,7 @@ export default function SquareGrid({
 
     return (
       <AnimatedTouchableOpacity
-        key={index}
+        key={`${index}-${disabled}-${isHighlighted}`}
         style={[
           styles.square,
           {

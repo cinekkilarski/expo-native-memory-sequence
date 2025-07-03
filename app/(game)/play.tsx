@@ -12,7 +12,7 @@ export default function PlayScreen() {
   const [game] = useState(() => new MemorySequenceGame());
   const [gameState, setGameState] = useState<GameState>(game.getInitialState());
   const [highlightedSquare, setHighlightedSquare] = useState<number | null>(
-    null
+    null,
   );
   const [countdown, setCountdown] = useState<number | null>(null);
   const [showCorrect, setShowCorrect] = useState(false);

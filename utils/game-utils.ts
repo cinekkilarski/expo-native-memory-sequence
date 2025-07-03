@@ -1,7 +1,10 @@
 // Utility functions for the memory sequence game
+import { generateRandomSequence } from "expo-secure-rng";
 
-export const generateRandomSequence = (length: number): number[] => {
-  return Array.from({ length }, () => Math.floor(Math.random() * 9)); // 9 squares (3x3 grid)
+export const generateGameSequence = (length: number): number[] => {
+  const sequence = generateRandomSequence(length, 9);
+
+  return sequence; // 9 squares (3x3 grid) using secure RNG
 };
 
 export const validateSequence = (

@@ -46,4 +46,27 @@ export default [
       },
     },
   },
+  {
+    files: [
+      "expo-secure-rng/.eslintrc.js",
+      "expo-secure-rng/example/babel.config.js",
+      "expo-secure-rng/example/metro.config.js",
+      "expo-secure-rng/example/webpack.config.js",
+    ],
+    languageOptions: {
+      ecmaVersion: 2021,
+      sourceType: "script",
+      globals: {
+        module: "writable",
+        require: "writable",
+        __dirname: "writable",
+      },
+    },
+  },
+  {
+    ignores: [
+      "expo-secure-rng/build/**",
+      "expo-secure-rng/example/webpack.config.js",
+    ],
+  },
 ];

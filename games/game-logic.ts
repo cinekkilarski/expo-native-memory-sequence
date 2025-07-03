@@ -1,4 +1,4 @@
-import { generateRandomSequence } from "../utils/game-utils";
+import { generateGameSequence } from "../utils/game-utils";
 
 export interface GameState {
   level: number;
@@ -54,7 +54,7 @@ export class MemorySequenceGame {
   generateNewSequence(): void {
     const sequenceLength =
       this.config.initialSequenceLength + this.state.level - 1;
-    this.state.sequence = generateRandomSequence(sequenceLength);
+    this.state.sequence = generateGameSequence(sequenceLength);
   }
 
   startLevel(): GameState {
